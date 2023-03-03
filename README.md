@@ -1,4 +1,4 @@
-"# Visualizing-NEAT" 
+# Visualizing-NEAT
 
 code used to train the AI in this video
 
