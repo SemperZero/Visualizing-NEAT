@@ -1,0 +1,14 @@
+see what happens if this is not pointer. all elements should be copied inside snake pointer when initializing it. tail will be on heap, inside snake
+init snake with tail, tail is copied with =, right? = works on class?
+
+Tail* t = new Tail();
+tail = Tail(t) -> unde se aloca obiectul? se pune pe stack ceva? 
+tail = &t; e acelasi lucru cu un constructor de Tail care ia pointer catre t si face asignarea variabilelor de diauntru cum trebuie? daca da, atunci unde sunt alea definite? se fac pe stack si apoi se baga in *snake, nu?
+tail = Tail(t); == Tail t2 = Tail(t) && tail = t2; also 2 coieri, nu?  sau baga direct valorile acelea in *snake->tail?
+poate ar merge un == intre "Tail" si "Tail*" ca sa scrii direct in *snake->tail si sa nu faci 2 copieri. 
+exemplu banal aici, dar daca tail ar fi insane de mare sa nu incapa pe stack..
+
+
+what is static variable in dll
+
+func which returns small struct. does it copy on return? or can data get corrupted?
